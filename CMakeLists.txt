@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 4.4)
+project(C C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(C
+        "divide & conquer/main.c"
+        "divide & conquer/mergesort.c"
+        "divide & conquer/mergesort.h"
+        "divide & conquer/quicksort.c"
+        "divide & conquer/quicksort.h"
+        "divide & conquer/binarysearch.c"
+        "divide & conquer/binarysearch.h"
+        "divide & conquer/power.c"
+        "divide & conquer/power.h"
+        "divide & conquer/karatsuba.c"
+        "divide & conquer/karatsuba.h"
+        "divide & conquer/closest2points.c"
+        "divide & conquer/closest2points.h"
+)
+
+target_link_libraries(C m)
