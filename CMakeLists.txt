@@ -4,7 +4,7 @@ project(C C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(C
-        "divide & conquer/main.c"
+        # "divide & conquer/main.c"
         "divide & conquer/mergesort.c"
         "divide & conquer/mergesort.h"
         "divide & conquer/quicksort.c"
@@ -18,6 +18,12 @@ add_executable(C
         "divide & conquer/closest2points.c"
         "divide & conquer/closest2points.h"
         greedy/main.c
+        greedy/atm.c
+        greedy/atm.h
+        greedy/fracknap.c
+        greedy/fracknap.h
+        greedy/tsp.c
+        greedy/tsp.h
 )
 
 target_link_libraries(C m)
