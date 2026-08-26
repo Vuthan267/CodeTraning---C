@@ -17,6 +17,7 @@ add_executable(C
         "divide & conquer/karatsuba.h"
         "divide & conquer/closest2points.c"
         "divide & conquer/closest2points.h"
+        greedy/main.c
 )
 
 target_link_libraries(C m)
