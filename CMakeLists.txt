@@ -24,6 +24,10 @@ add_executable(C
         greedy/fracknap.h
         greedy/tsp.c
         greedy/tsp.h
+        greedy/cookie.c
+        greedy/cookie.h
+        greedy/stock.c
+        greedy/stock.h
 )
 
 target_link_libraries(C m)
