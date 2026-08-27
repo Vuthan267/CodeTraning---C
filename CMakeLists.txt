@@ -32,6 +32,8 @@ add_executable(C
         greedy/activity.h
         greedy/jump.c
         greedy/jump.h
+        greedy/jobsequencing.c
+        greedy/jobsequencing.h
 )
 
 target_link_libraries(C m)

@@ -13,7 +13,7 @@ int findMinJump(int steps[], int n) {
 	int current_reach = 0;
 	int max_reach = 0;
 	int jump_count = 0;
-	
+
 	for (int i = 0; i < n; i++) {
 		max_reach = max2(max_reach, steps[i] + i);
 		if (max_reach >= n - 1) {
@@ -28,6 +28,8 @@ int findMinJump(int steps[], int n) {
 				current_reach = max_reach;
 			}
 		}
+
+		// 1 4 3 2 6 7
 	}
 
 	return -1;
