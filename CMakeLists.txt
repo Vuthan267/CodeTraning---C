@@ -39,6 +39,10 @@ add_executable(C
         "dynamic programming/rodcutting.h"
         "dynamic programming/fibonacci.c"
         "dynamic programming/fibonacci.h"
+        "dynamic programming/climbstairs.c"
+        "dynamic programming/climbstairs.h"
+        "dynamic programming/robber.c"
+        "dynamic programming/robber.h"
 )
 
 target_link_libraries(C m)
