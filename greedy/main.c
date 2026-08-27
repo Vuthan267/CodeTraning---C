@@ -5,12 +5,13 @@
 #include "tsp.h"
 #include "cookie.h"
 #include "stock.h"
+#include "activity.h"
+#include "jump.h"
 
 int main() {
-	int n = 5;
-	int price[] = {10, 8, 6, 4, 2};
-	int money = 30;
+	int n = 6;
+	int steps[] = {1, 4, 3, 2, 6, 7};
 
-	printf("%d", findMaxStock(price, n, money));
+	printf("%d", findMinJump(steps, n));
 	return 0;
 }

@@ -28,6 +28,10 @@ add_executable(C
         greedy/cookie.h
         greedy/stock.c
         greedy/stock.h
+        greedy/activity.c
+        greedy/activity.h
+        greedy/jump.c
+        greedy/jump.h
 )
 
 target_link_libraries(C m)

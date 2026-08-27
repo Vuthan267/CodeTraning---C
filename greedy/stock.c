@@ -18,17 +18,17 @@ int findMaxStock(int price[], int n, int money) {
 	}
 	qsort(S, n, sizeof(Stock), compareStock);
 
-	int i = 0;
 	int stock_cnt = 0;
-	while (i < n) {
+
+	for (int i = 0; i < n; i++) {
 		Stock *currStock = &S[i];
 		int amount_today = currStock->max_amount;
+
 		while (currStock->price <= money && amount_today > 0) {
 			stock_cnt++;
 			amount_today--;
 			money -= currStock->price;
 		}
-		i++;
 	}
 
 	return stock_cnt;
