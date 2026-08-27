@@ -17,7 +17,7 @@ add_executable(C
         "divide & conquer/karatsuba.h"
         "divide & conquer/closest2points.c"
         "divide & conquer/closest2points.h"
-        greedy/main.c
+        # greedy/main.c
         greedy/atm.c
         greedy/atm.h
         greedy/fracknap.c
@@ -34,6 +34,11 @@ add_executable(C
         greedy/jump.h
         greedy/jobsequencing.c
         greedy/jobsequencing.h
+        "dynamic programming/main.c"
+        "dynamic programming/rodcutting.c"
+        "dynamic programming/rodcutting.h"
+        "dynamic programming/fibonacci.c"
+        "dynamic programming/fibonacci.h"
 )
 
 target_link_libraries(C m)
