@@ -43,6 +43,14 @@ add_executable(C
         "dynamic programming/climbstairs.h"
         "dynamic programming/robber.c"
         "dynamic programming/robber.h"
+        "dynamic programming/coinchange.c"
+        "dynamic programming/coinchange.h"
+        "dynamic programming/mincostpath.c"
+        "dynamic programming/mincostpath.h"
+        "dynamic programming/decode.c"
+        "dynamic programming/decode.h"
+        "dynamic programming/knapsackdynamic.c"
+        "dynamic programming/knapsackdynamic.h"
 )
 
 target_link_libraries(C m)
