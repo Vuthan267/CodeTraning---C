@@ -7,13 +7,21 @@
 #include "mincostpath.h"
 #include "decode.h"
 #include "knapsackdynamic.h"
+#include "lcs.h"
+#include "minpathtriangle.h"
 
 int main() {
-	int val[] = {1, 2, 3};
-	int wt[] = {4, 5, 1};
-	int n = 3;
-	int capacity = 4;
-	printf("%d", solveBinKnap(val, wt, n, 4));
+	int n = 4;
+
+	// Triangle array declaration
+	int triangle[4][4] = {
+		{2},
+		{3, 7},
+		{8, 5, 6},
+		{6, 1, 9, 3}
+	};
+
+	printf("%d", findMinPathTriangle2(n, triangle));
 
 	return 0;
 }

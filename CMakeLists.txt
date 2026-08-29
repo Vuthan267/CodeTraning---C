@@ -51,6 +51,10 @@ add_executable(C
         "dynamic programming/decode.h"
         "dynamic programming/knapsackdynamic.c"
         "dynamic programming/knapsackdynamic.h"
+        "dynamic programming/lcs.c"
+        "dynamic programming/lcs.h"
+        "dynamic programming/minpathtriangle.c"
+        "dynamic programming/minpathtriangle.h"
 )
 
 target_link_libraries(C m)
