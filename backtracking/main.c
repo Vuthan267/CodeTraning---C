@@ -4,10 +4,11 @@
 #include "subsetsum.h"
 #include "mazerat.h"
 #include "nqueen.h"
+#include  "allsubset.h"
 
 int main() {
-	int n = 16;
-	printf("%lld", solveNQueens2(n));
+	int arr[] = {1, 2, 3};
+	printAllSubset2(arr, 3);
 
 	return 0;
 }

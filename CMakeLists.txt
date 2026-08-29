@@ -64,6 +64,8 @@ add_executable(C
         backtracking/subsetsum.h
         backtracking/mazerat.c
         backtracking/mazerat.h
+        backtracking/allsubset.c
+        backtracking/allsubset.h
 )
 
 target_link_libraries(C m)
