@@ -13,4 +13,6 @@ int solveBinKnap(int val[], int wt[], int n, int capacity);
 
 void printBinKnap(int val[], int wt[], int n, int capacity);
 
+int solveUnboundedKnap(int val[], int wt[], int n, int capacity);
+
 #endif //C_KNAPSACKDYNAMIC_H

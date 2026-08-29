@@ -23,6 +23,7 @@ int solveBinKnap(int val[], int wt[], int n, int capacity) {
 	return dp[capacity];
 }
 
+// Just use the normal 2D array. This is pointless... or not?
 void printBinKnap(int val[], int wt[], int n, int capacity) {
 	int dp[capacity + 1];
 	bool chosen[n + 1][capacity + 1];
@@ -56,4 +57,19 @@ void printBinKnap(int val[], int wt[], int n, int capacity) {
 			capacity -= wt[i];
 		}
 	}
+}
+
+int solveUnboundedKnap(int val[], int wt[], int n, int capacity) {
+	int dp[capacity + 1];
+	for (int i = 0; i <= capacity; i++) {
+		dp[i] = 0;
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = wt[i]; j <= capacity; j++) {
+			dp[j] = maxKnap(dp[j], dp[j - wt[i]] + val[i]);
+		}
+	}
+
+	return dp[capacity];
 }

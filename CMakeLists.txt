@@ -34,7 +34,7 @@ add_executable(C
         greedy/jump.h
         greedy/jobsequencing.c
         greedy/jobsequencing.h
-        "dynamic programming/main.c"
+        # "dynamic programming/main.c"
         "dynamic programming/rodcutting.c"
         "dynamic programming/rodcutting.h"
         "dynamic programming/fibonacci.c"
@@ -55,6 +55,15 @@ add_executable(C
         "dynamic programming/lcs.h"
         "dynamic programming/minpathtriangle.c"
         "dynamic programming/minpathtriangle.h"
+        backtracking/main.c
+        backtracking/nqueen.c
+        backtracking/nqueen.h
+        backtracking/permutationstring.c
+        backtracking/permutationstring.h
+        backtracking/subsetsum.c
+        backtracking/subsetsum.h
+        backtracking/mazerat.c
+        backtracking/mazerat.h
 )
 
 target_link_libraries(C m)

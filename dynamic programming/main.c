@@ -11,17 +11,16 @@
 #include "minpathtriangle.h"
 
 int main() {
-	int n = 4;
+	// Input parameters
+	int W = 100; // Knapsack capacity
+	int n = 4;   // Number of items
+	int wt[] = {5, 10, 15, 20};       // Weights of items
+	int val[] = {10, 30, 20, 50};     // Values of items
 
-	// Triangle array declaration
-	int triangle[4][4] = {
-		{2},
-		{3, 7},
-		{8, 5, 6},
-		{6, 1, 9, 3}
-	};
+	int max_val = solveUnboundedKnap(val, wt, n, W);
 
-	printf("%d", findMinPathTriangle2(n, triangle));
+	printf("Maximum value in Knapsack = %d\n", max_val);
+	printf("Expected Result = 300\n");
 
 	return 0;
 }
