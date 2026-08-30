@@ -70,10 +70,10 @@ add_executable(C
         backtracking/combinationalsum.h
         backtracking/hamiltoniancycle.c
         backtracking/hamiltoniancycle.h
-        # branchandbound/main.c
+        branchandbound/main.c
         branchandbound/atm.c
         branchandbound/atm.h
-        sorting/main.c
+        # sorting/main.c
         sorting/bubblesort.c
         sorting/bubblesort.h
         sorting/insertionsort.c
@@ -82,6 +82,7 @@ add_executable(C
         sorting/selectionsort.h
         sorting/heapsort.c
         sorting/heapsort.h
+        branchandbound/atmSetup.c
 )
 
 target_link_libraries(C m)
