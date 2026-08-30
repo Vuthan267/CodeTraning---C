@@ -66,6 +66,10 @@ add_executable(C
         backtracking/mazerat.h
         backtracking/allsubset.c
         backtracking/allsubset.h
+        backtracking/combinationalsum.c
+        backtracking/combinationalsum.h
+        backtracking/hamiltoniancycle.c
+        backtracking/hamiltoniancycle.h
 )
 
 target_link_libraries(C m)

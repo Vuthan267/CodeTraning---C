@@ -5,10 +5,12 @@
 #include "mazerat.h"
 #include "nqueen.h"
 #include  "allsubset.h"
+#include "combinationalsum.h"
+#include "hamiltoniancycle.h"
 
 int main() {
-	int arr[] = {1, 2, 3};
-	printAllSubset2(arr, 3);
+	bool adjMat[5][5] = {{0, 1, 0, 1, 0}, {1, 0, 1, 1, 1}, {0, 1, 0, 0, 1}, {1, 1, 0, 0, 1}, {0, 1, 1, 1, 0}};
+	printHamiCycle(5, adjMat);
 
 	return 0;
 }
