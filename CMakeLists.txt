@@ -55,7 +55,7 @@ add_executable(C
         "dynamic programming/lcs.h"
         "dynamic programming/minpathtriangle.c"
         "dynamic programming/minpathtriangle.h"
-        backtracking/main.c
+        # backtracking/main.c
         backtracking/nqueen.c
         backtracking/nqueen.h
         backtracking/permutationstring.c
@@ -70,6 +70,18 @@ add_executable(C
         backtracking/combinationalsum.h
         backtracking/hamiltoniancycle.c
         backtracking/hamiltoniancycle.h
+        # branchandbound/main.c
+        branchandbound/atm.c
+        branchandbound/atm.h
+        sorting/main.c
+        sorting/bubblesort.c
+        sorting/bubblesort.h
+        sorting/insertionsort.c
+        sorting/insertionsort.h
+        sorting/selectionsort.c
+        sorting/selectionsort.h
+        sorting/heapsort.c
+        sorting/heapsort.h
 )
 
 target_link_libraries(C m)
