@@ -85,6 +85,8 @@ add_executable(C
         branchandbound/atmSetup.c
         branchandbound/knapBnB.c
         branchandbound/knapBnB.h
+        branchandbound/tspBnB.c
+        branchandbound/tspBnB.h
 )
 
 target_link_libraries(C m)
