@@ -83,6 +83,8 @@ add_executable(C
         sorting/heapsort.c
         sorting/heapsort.h
         branchandbound/atmSetup.c
+        branchandbound/knapBnB.c
+        branchandbound/knapBnB.h
 )
 
 target_link_libraries(C m)
