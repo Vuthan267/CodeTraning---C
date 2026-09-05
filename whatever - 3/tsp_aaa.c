@@ -4,6 +4,8 @@
 
 #include "tsp_aaa.h"
 
+#include <stdio.h>
+
 int solve_tsp_greedy(int n, int cost[n][n]) {
     bool *visited = calloc(n, sizeof(bool));
     visited[0] = true;
@@ -151,6 +153,7 @@ int solve_tsp_bnb(int n, int cost[n][n]) {
         if (current.level == n) {
             free(current.visited);
             free_heap(&pq);
+
             return current.total_cost + cost[current.current_city][0];
         }
 
@@ -169,7 +172,6 @@ int solve_tsp_bnb(int n, int cost[n][n]) {
 
             next.level++;
             next.bound = cal_bound_tsp(n, cost, next);
-
             push(&pq, next);
         }
         free(current.visited);
