@@ -70,7 +70,7 @@ add_executable(C
         backtracking/combinationalsum.h
         backtracking/hamiltoniancycle.c
         backtracking/hamiltoniancycle.h
-        branchandbound/main.c
+        # branchandbound/main.c
         branchandbound/atm.c
         branchandbound/atm.h
         # sorting/main.c
@@ -87,6 +87,25 @@ add_executable(C
         branchandbound/knapBnB.h
         branchandbound/tspBnB.c
         branchandbound/tspBnB.h
+        "whatever - 3/main.c"
+        "whatever - 3/sorting.c"
+        "whatever - 3/sorting.h"
+        "whatever - 3/karatsuba.c"
+        "whatever - 3/karatsuba.h"
+        "whatever - 3/binary_search.c"
+        "whatever - 3/binary_search.h"
+        "whatever - 3/knapsackkk.c"
+        "whatever - 3/knapsackkk.h"
+        "whatever - 3/tsp_aaa.c"
+        "whatever - 3/tsp_aaa.h"
+        "whatever - 3/atmchange.c"
+        "whatever - 3/atmchange.h"
+        "whatever - 3/triangle_path.c"
+        "whatever - 3/triangle_path.h"
+        # "whatever - 3/heapks.c"
+        # "whatever - 3/heapks.h"
+        "whatever - 3/heaptsp.c"
+        "whatever - 3/heaptsp.h"
 )
 
 target_link_libraries(C m)
