@@ -47,6 +47,7 @@ int cal_bound_tsp(int n, int cost[n][n], TSPNode node) {
     }
 
     //// MST unvisited
+    // min_edge[i] means the shortest edge connecting city i to the mst
     bool mst[n];
     int min_edge[n];
     for (int i = 0; i < n; i++) {
@@ -54,7 +55,7 @@ int cal_bound_tsp(int n, int cost[n][n], TSPNode node) {
         min_edge[i] = INT_MAX;
     }
 
-    // Choose 1st city
+    // Choose 1st city, as the first vertex of mst
     int start = -1;
     for (int i = 0; i < n; i++) {
         if (node.visited[i]) {
@@ -87,7 +88,7 @@ int cal_bound_tsp(int n, int cost[n][n], TSPNode node) {
 
     /*
      * Iterate over the remaining unvisited cities, minus 1 (we chose one starting city already)
-     * Each iteration, we expand the mst by one
+     * Each iteration, we expand the mst by one.
      */
     int mst_cost = 0;
     for (int count = 1; count < remaining; count++) {
@@ -108,7 +109,11 @@ int cal_bound_tsp(int n, int cost[n][n], TSPNode node) {
         mst[next] = true;
         mst_cost += shortest;
 
-        // Recaculate shortest path from unvisited, not mst cities to the newly added one
+        /*
+        * Recaculate shortest path from unvisited, not mst cities to the expanded mst
+        * We only need to consider the newly added vertex, as the previous min_edge[i] already includes
+        * previous vertexs
+        */
         for (int i = 0; i < n; i++) {
             if (node.visited[i] || mst[i]) {
                 continue;
